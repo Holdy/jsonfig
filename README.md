@@ -10,7 +10,7 @@ var config = jsonfig.setup('root')
     .lookInFile('./env_specific_config.json')         // Then look in here.
     .lookInFile('./distributed_default_config.json'); // Etc...
     
-    jsonfig.setLogginFunction   // Optionally tell jsonfig where to log.
+    jsonfig.setLoggingFunction   // Optionally tell jsonfig where to log.
         ('warn', myFavouriteLogger.warn)
         ('info', myFavouriteLogger.info);
     
