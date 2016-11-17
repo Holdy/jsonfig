@@ -1,10 +1,10 @@
 {
-  "name": "jsonfig",
-  "version": "0.0.1",
+  "name": "@holdy/jsonfig",
+  "version": "1.0.0",
   "description": "Chaining configuration loader for node.",
   "main": "jsonfig.js",
   "publishConfig": {
-    "registry": "https://www.npmjs.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "test": "eslint jsonfig.js, lib/**/*.js && istanbul cover _mocha -- --timeout 60000 -R spec --recursive",
@@ -14,8 +14,7 @@
     "jsonfig",
     "json",
     "config",
-    "node",
-    "config"
+    "node config"
   ],
   "author": "Chris H <chris.holden@rainbird.ai>",
   "license": "MIT"

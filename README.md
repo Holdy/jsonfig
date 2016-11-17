@@ -1,8 +1,9 @@
 # Jsonfig - A simple and flexible configuration loader.
 
 In your main application - setup as follows:
-```sh
-var jsonfig = require('jsonfig');
+
+```javascript
+var jsonfig = require('@holdy/jsonfig');
 
 var config = jsonfig.setup('root')
     .lookInEnvironment()                              // Environment overrides all.
@@ -16,9 +17,9 @@ var config = jsonfig.setup('root')
 var dbHost = config.getValue('database-host-name');
 ```
 
-Now, assuming we have a shared library whos config is overrideable by the main application.
+Now, assuming we have a shared library who's config is overrideable by the main application:
 
-```sh
+```javascript
 var config = jsonfig.setup('module1')
     .lookInConfig('root')                 // Find and use the config specified above.
     .lookInFile('./module1-config.json'); // Look here if key isn't found in above.

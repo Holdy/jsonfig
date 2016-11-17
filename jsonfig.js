@@ -2,8 +2,8 @@ var EnvironmentHandler = require('./lib/environmentHandler');
 var JsonHandler        = require('./lib/jsonHandler');
 var FileHandler        = require('./lib/fileHandler');
 
-var configValue   = require('./lib/configValue');
-var outputLib = require('./lib/outputLib');
+var configValue = require('./lib/configValue');
+var outputLib   = require('./lib/outputLib');
 
 var nameRegistry = {};
 
